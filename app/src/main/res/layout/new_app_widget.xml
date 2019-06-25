@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:padding="8dp">
+    <!--  android:resizeMode="vertical"  -->
+
+
+    <ImageButton
+        android:id="@+id/buttonPrevious"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/prev_img"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"/>
+
+    <ImageButton
+        android:id="@+id/buttonKarma"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/karma_greyed"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:layout_alignTop="@+id/buttonPrevious"
+        android:layout_toRightOf="@+id/buttonPrevious"
+        android:layout_toEndOf="@+id/buttonPrevious" />
+
+    <ImageButton
+        android:id="@+id/buttonRelease"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/release_colored"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:layout_alignTop="@+id/buttonKarma"
+        android:layout_toLeftOf="@+id/buttonNext"
+        android:layout_toStartOf="@+id/buttonNext" />
+
+    <ImageButton
+        android:id="@+id/buttonNext"
+        android:src="@drawable/next_img"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@android:color/transparent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitCenter"/>
+
+</RelativeLayout>
